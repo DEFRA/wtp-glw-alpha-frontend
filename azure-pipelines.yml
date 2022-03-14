@@ -20,3 +20,12 @@ steps:
     npm run buildw
     npm run unit-test
   displayName: 'npm install and buildw'
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'RWD-WTS-GLW-ADO-SC'
+    appType: 'webAppLinux'
+    appName: 'RWD-WTS-GLW-DEV-FE'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    runtimeStack: 'NODE|16-lts'
+    
