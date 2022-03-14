@@ -19,8 +19,11 @@ steps:
     npm install
     npm run buildw
     npm run unit-test
-  displayName: 'npm install and buildw'
-
+  displayName: 'npm install and buildw and unit-test'
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
+    includeRootFolder: false
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'RWD-WTS-GLW-ADO-SC'
@@ -28,4 +31,5 @@ steps:
     appName: 'RWD-WTS-GLW-DEV-FE'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     runtimeStack: 'NODE|16-lts'
+    startUpCommand: 'npm run start'
     
