@@ -32,4 +32,5 @@ steps:
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     runtimeStack: 'NODE|16-lts'
     startUpCommand: 'npm run start'
+    deploymentMethod: 'zipDeploy'
     
