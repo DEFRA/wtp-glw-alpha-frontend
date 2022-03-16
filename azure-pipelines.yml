@@ -15,8 +15,7 @@ variables:
   webAppName: 'RWD-WTS-GLW-DEV-FE'
 
   # Environment name
-  environmentName: 'DEV'
-
+  environmentName: 'RWD-WTS-GLW-DEV-FE'
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
