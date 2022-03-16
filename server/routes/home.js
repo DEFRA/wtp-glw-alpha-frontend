@@ -4,7 +4,7 @@ module.exports = [{
   handler: (request, h) => {
     return h.view('home', {
       title: 'Hello',
-      message: 'World'
+      message: 'Damian'
     })
   }
 }]
