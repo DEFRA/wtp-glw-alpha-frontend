@@ -15,7 +15,7 @@ variables:
   webAppName: 'RWD-WTS-GLW-DEV-FE'
 
   # Environment name
-  # environmentName: 'damianwa'
+  environmentName: 'DEV'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -60,7 +60,7 @@ stages:
   jobs:
   - deployment: Deploy
     displayName: Deploy
-    # environment: $(environmentName)
+    environment: $(environmentName)
     pool:
       vmImage: $(vmImageName)
     strategy:
