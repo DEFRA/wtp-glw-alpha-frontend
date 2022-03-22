@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div class="flex-container grid-row">
+
+      <div class="card">
+        <div class="card-body active">
+          <h2 class="heading-medium card-heading"><a href="alerts">View Annex VII alerts</a></h2>
+        </div>
+        <div class="card-action">
+          View alerts on received Annex VII forms.
+        </div> 
+      </div>
+
+    <div class="card">
+      <div class="card-body active">
+        <h2 class="heading-medium card-heading"><a href="received-forms?agency-officer-time-period=all-dates">View all submitted exports</a></h2>
+      </div>
+
+      <div class="card-action">
+        Search and view submitted Annex VII forms.
+      </div> 
+    </div>
+
+    <div class="card">
+      <div class="card-body active">
+        <h2 class="heading-medium card-heading"><a href="reports">Generate a report</a></h2>
+      </div>
+
+      <div class="card-action">
+        Generate and download reports on Annex VII data.
+      </div> 
+    </div>
+    
+  </div>
+
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+  <div class="flex-container grid-row">
+
+    <div class="card">
+      <div class="card-body active">
+        <h2 class="heading-medium card-heading"><a href="manual-bulk-api">Tell us about a waste export</a></h2>
+      </div>
+      <div class="card-action">
+        This will create an Annex VII for you to print out.
+      </div> 
+    </div>
+
+    {# DRAFTS WORK IN PROGRESS #}
+    <div class="card">
+      <div class="card-body active">
+        <h2 class="heading-medium card-heading"><a href="draft-exports?exporter-time-period=all-dates&draft-cancel=false">View draft waste exports</a></h2>
+      </div>
+      <div class="card-action">
+        Search, view, add and edit information for all draft waste exports. (View <a href="draft-exports?exporter-time-period=all-dates&option=a&draft-cancel=false">option A</a> or <a href="draft-exports?exporter-time-period=all-dates&option=b&draft-cancel=false">option B</a>)
+      </div> 
+    </div>
+    {# #}
+
+    <div class="card">
+      <div class="card-body active">
+        <h2 class="heading-medium card-heading"><a href="update-prenotifications">Update exports awaiting final details</a></h2>
+      </div>
+      <div class="card-action">
+        Add new information about weight, date of transport, or carrier details.
+      </div> 
+    </div>
+
+    <div class="card">
+      <div class="card-body active">
+        <h2 class="heading-medium card-heading"><a href="submitted-prenotifications?exporter-time-period=all-dates">View all submitted exports</a></h2>
+      </div>
+      <div class="card-action">
+        Search and view previous waste exports.
+      </div> 
+    </div>
+  
+    <div class="card">
+      <div class="card-body active">
+        <h2 class="heading-medium card-heading"><a href="prenotification-templates">View your saved templates</a></h2>
+      </div>
+      <div class="card-action">
+        Use templates to generate an Annex VII faster.
+      </div> 
+    </div>
+
+  </div>
+
+{% endblock %}

@@ -1,6 +1,6 @@
 module.exports = [{
   method: 'GET',
-  path: '/',
+  path: '/home',
   handler: (request, h) => {
     return h.view('home', {
       title: 'Hello',
